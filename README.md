@@ -10,17 +10,19 @@ Claude Code plugin marketplace from TICKIT.
 
 ## Available plugins
 
-### nextjs-secret-exposure
+### client-secret-exposure
 
-Audits Next.js apps for secrets exposed in the client-side JS bundle.
+Audits any project for secrets exposed in client-side code — web, Flutter, React Native, iOS, Android, backend.
 
 ```bash
-/plugin install nextjs-secret-exposure@tickit-claude-marketplace
+/plugin install client-secret-exposure@tickit-claude-marketplace
 ```
 
 Covers:
-- Detecting `NEXT_PUBLIC_` variables baked into the bundle
-- Classification: dangerous vs public by design
-- Server-side proxy fix patterns for Google Maps, payment credentials
-- Firebase App Check vs CORS
-- Post-fix verification checklist for Vercel
+- Detection per platform: Next.js JS bundle, Flutter/React Native APK binary, iOS/Android binary, git history
+- Classification: 15+ key types — safe vs dangerous vs partial
+- Backend-for-Frontend (BFF) proxy pattern for any stack
+- Environment variable best practices per platform
+- Firebase App Check + Security Rules
+- CORS vs server-side enforcement
+- Post-fix checklist: rotate, remove, deploy, verify, clean history, restrict

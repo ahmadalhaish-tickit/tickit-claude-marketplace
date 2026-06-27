@@ -10,13 +10,13 @@
   },
   "plugins": [
     {
-      "name": "nextjs-secret-exposure",
+      "name": "client-secret-exposure",
       "source": {
         "source": "url",
-        "url": "https://github.com/ahmadalhaish-tickit/nextjs-secret-exposure-skill.git",
+        "url": "https://github.com/ahmadalhaish-tickit/client-secret-exposure-skill.git",
         "ref": "main"
       },
-      "description": "Audits Next.js apps for secrets exposed in the client JS bundle via NEXT_PUBLIC_ env vars. Covers detection, classification, server-side proxy fix patterns, Firebase App Check, and CORS vs App Check.",
+      "description": "Audits any project — web, Flutter, React Native, iOS, Android, backend — for secrets exposed in client-side code. Covers detection per platform, classification, BFF proxy patterns, Firebase App Check, CORS vs server auth, and post-fix checklist.",
       "version": "1.0.0",
       "strict": true
     }
