@@ -1,0 +1,24 @@
+{
+  "name": "tickit-claude-marketplace",
+  "owner": {
+    "name": "TICKIT",
+    "email": "ahmad.alhaish@tickit.co"
+  },
+  "metadata": {
+    "description": "Claude Code skills and plugins from TICKIT",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "nextjs-secret-exposure",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ahmadalhaish-tickit/nextjs-secret-exposure-skill.git",
+        "ref": "main"
+      },
+      "description": "Audits Next.js apps for secrets exposed in the client JS bundle via NEXT_PUBLIC_ env vars. Covers detection, classification, server-side proxy fix patterns, Firebase App Check, and CORS vs App Check.",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}
